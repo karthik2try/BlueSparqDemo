@@ -1,0 +1,23 @@
+{
+  "name": "bluesparqvm",
+  "version": "1.0.0",
+  "description": "dispenser web-api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthik2try/BlueSparqDemo.git"
+  },
+  "author": "karthik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karthik2try/BlueSparqDemo/issues"
+  },
+  "homepage": "https://github.com/karthik2try/BlueSparqDemo#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "mongoose": "^4.9.5"
+  }
+}
