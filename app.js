@@ -1,5 +1,11 @@
 'use strict';
+const express = require('express');
+const app = express();
 
-const http = require('http');
+app.use('/',require('./router'));
 
-const express
+app.listen(3000,function(err){
+  if(!err){
+    console.log('express listening to port 3000');
+  }
+});
