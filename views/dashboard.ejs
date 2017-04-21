@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard - vending machine</title>
+    <style>
+      table,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        margin: auto;
+      }
+      th,td{
+        padding: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <% machines.forEach(function(machine) { %>
+      <h2 style="text-align:center;">Store Name : <%=machine.store_name%></h2>
+    <table style="width=75%;margin-top:100px;">
+      <caption><%=machine.machine_id%></caption
+      <tr>
+        <th>Name</th><th>Availability(oz)</th><th>Capacity</th><th>Price</th>
+      </tr>
+      <% machine.drinks.forEach(function(drink) { %>
+      <tr><td><%=drink.drink_name%></td><td><%=drink.drink_availability%></td><td><%=drink.drink_capacity%></td><td><%=drink.drink_price%></td></tr>
+      <% }); %>
+    </table>
+    <% }); %>
+  </body>
+</html>

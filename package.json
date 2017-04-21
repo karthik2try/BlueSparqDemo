@@ -17,7 +17,12 @@
   },
   "homepage": "https://github.com/karthik2try/BlueSparqDemo#readme",
   "dependencies": {
+    "body-parser": "^1.17.1",
+    "braintree": "^2.0.2",
+    "cors": "^2.8.3",
+    "ejs": "2.3.4",
     "express": "^4.15.2",
-    "mongoose": "^4.9.5"
+    "mongoose": "4.3.1",
+    "sendmail": "^1.1.1"
   }
 }

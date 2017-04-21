@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  </head>
+  <body>
+    <h2>Feel the chill!!</h2>
+    <% drinks.forEach(function(drink) { %>
+        <div id="img-container"><a href="http://localhost:3000/<%=machine_id%>/<%=drink.drink_name%>/<%=drink.drink_price%>"><img src="<%= drink.drink_img_url %>" alt="<%=drink.drink_name %>" style="height:200px;width:200px;"/></a></div>
+    <% }); %>
+    <ul>
+  </body>
+</html>

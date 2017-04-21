@@ -1,0 +1,11 @@
+#img-container{
+ text-align: center;
+ margin: 50px 0 50px 0;
+}
+#img-container:first-child{
+ text-align: center;
+ margin: 100px 0 50px 0;
+}
+h2{
+  text-align: center;
+}

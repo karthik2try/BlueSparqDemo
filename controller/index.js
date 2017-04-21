@@ -1,11 +1,18 @@
+const machine = require('../database');
+const utility = require('../utility');
+const BT = require('../braintree');
 
 module.exports = {
-  printall : function(){
-    console.log('hi i am controller');
+  getMachineDetails : function(){
+    return machine;
   },
 
-  print:function(){
-
+  print : function(mId){
+    let drinks = machine.drinks;
+    console.log(drinks);
+    utility.checkForRefill(drinks);
+    // BT.processPayment();
+    return mId;
   }
 
 }
